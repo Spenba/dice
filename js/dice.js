@@ -1,16 +1,16 @@
 
 // variables
-const rollButton = document.getElementById("button");
-const audio = document.getElementById("sound01");
-const dice = document.getElementById("die");
+var rollButton = document.getElementById("button");
+var audio = document.getElementById("sound01");
+var dice = document.getElementById("die");
 
-const coin = new Dice(2);
-const d4 = new Dice(4);
-const d6 = new Dice(6);
-const d10 = new Dice(10);
-const d8 = new Dice(8);
-const d12 = new Dice(12);
-const d20 = new Dice(20);
+var coin = new Dice(2);
+var d4 = new Dice(4);
+var d6 = new Dice(6);
+var d10 = new Dice(10);
+var d8 = new Dice(8);
+var d12 = new Dice(12);
+var d20 = new Dice(20);
 
 
 // Sound function
@@ -25,7 +25,7 @@ function play() {
 
 // Display dice result
 function printNumber(number) {
-  const placeholder = document.getElementById("placeholder");
+  var placeholder = document.getElementById("placeholder");
   placeholder.innerHTML = number;
 }
 
@@ -60,11 +60,11 @@ rollButton.addEventListener("click", (e) => {
       console.log("hello world");
 }, false);
 
-//Dice constructor function creates instance objects
+//Dice varructor function creates instance objects
 function Dice(sides) {
   this.sides = sides;
   this.roll = function()  {
-    const randomNumber = Math.floor(Math.random() * this.sides) + 1;
+    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
     return randomNumber;
   };
 }
