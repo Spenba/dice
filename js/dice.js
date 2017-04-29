@@ -2,6 +2,7 @@
 const button = document.getElementById("button");
 const audio = document.getElementById("sound01");
 const die = document.getElementById("die");
+
 const coin = new Dice(2);
 const d4 = new Dice(4);
 const d6 = new Dice(6);
@@ -17,7 +18,7 @@ function play() {
         audio.play();
     }
     else {
-        audio.currentTime = 0
+        audio.currentTime = 0;
     }
 }
 
@@ -59,9 +60,9 @@ button.addEventListener("click", (e) => {
 
 //Dice constructor function creates instance objects
 function Dice(sides) {
-  this.sides = sides
+  this.sides = sides;
   this.roll = function()  {
     const randomNumber = Math.floor(Math.random() * this.sides) + 1;
     return randomNumber;
-  }
+  };
 }
