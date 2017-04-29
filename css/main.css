@@ -49,15 +49,15 @@ footer {
 }
 
 button {
-  height: 3rem;
+  height: 4rem;
   width: 60%;
-  background:transparent;
+  background: transparent;
   border: 1rem solid transparent;
   cursor: pointer;
   font-size: 2rem;
   font-family: 'Rubik', sans-serif;
   font-weight: 800;
-  line-height: .3rem;
+  line-height: .1rem;
   margin: 1rem 0 2rem 0;
   padding: .5rem;
   text-decoration: none;
@@ -309,4 +309,13 @@ p {
   justify-content: flex-end;
   position: fixed;
   bottom: 2rem;
+}
+
+
+@media screen and (min-width: 890px) {
+
+  button {
+    width: 20%;
+  }
+
 }

@@ -29,12 +29,12 @@ function printNumber(number) {
   placeholder.innerHTML = number;
 }
 
-die.addEventListener("click", (e) => {
+dice.addEventListener("click", (e) => {
       e.preventDefault;
       // -> removing the animation class
       dice.classList.remove("shake");
       // -> triggering reflow
-      void die.offsetWidth;
+      void dice.offsetWidth;
       // -> re-adding the animation class
       dice.classList.add("shake");
       // -> dice result
@@ -49,7 +49,7 @@ rollButton.addEventListener("click", (e) => {
       // -> removing the animation class
       dice.classList.remove("shake");
       // -> triggering reflow
-      void die.offsetWidth;
+      void dice.offsetWidth;
       // -> re-adding the animation class
       dice.classList.add("shake");
       // -> dice result
