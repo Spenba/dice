@@ -1,7 +1,8 @@
+
 // variables
-const button = document.getElementById("button");
+const rollButton = document.getElementById("button");
 const audio = document.getElementById("sound01");
-const die = document.getElementById("die");
+const dice = document.getElementById("die");
 
 const coin = new Dice(2);
 const d4 = new Dice(4);
@@ -31,11 +32,11 @@ function printNumber(number) {
 die.addEventListener("click", (e) => {
       e.preventDefault;
       // -> removing the animation class
-      die.classList.remove("shake");
+      dice.classList.remove("shake");
       // -> triggering reflow
       void die.offsetWidth;
       // -> re-adding the animation class
-      die.classList.add("shake");
+      dice.classList.add("shake");
       // -> dice result
       let result = d20.roll();
       printNumber(result);
@@ -43,19 +44,20 @@ die.addEventListener("click", (e) => {
       play();
 }, false);
 
-button.addEventListener("click", (e) => {
+rollButton.addEventListener("click", (e) => {
       e.preventDefault;
       // -> removing the animation class
-      die.classList.remove("shake");
+      dice.classList.remove("shake");
       // -> triggering reflow
       void die.offsetWidth;
       // -> re-adding the animation class
-      die.classList.add("shake");
+      dice.classList.add("shake");
       // -> dice result
       let result = d20.roll();
       printNumber(result);
       // -> play sound
       play();
+      console.log("hello world");
 }, false);
 
 //Dice constructor function creates instance objects
