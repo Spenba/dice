@@ -6,20 +6,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <title> Let'em roll </title>
+  <title> Let 'em </title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body class="flex center">
   <header class="flex-row center">
-    <h1 class="flex center">Let'em Roll</h1>
+    <h2 class="flex center">Let 'em - Roll</h2>
   </header>
   <div class="container flex center">
-    <div id="d20" class="flex center">
-      <h1 id="roll">20</h1>
+    <div id="die" class="flex center animated">
+      <h1 id="placeholder"></h1>
       <div id="triangle-top"></div>
       <div id="triangle-center"></div>
       <div id="triangle-right"></div>
@@ -33,10 +36,12 @@
     </div>
   </div>
   <footer class="flex start">
-    <button class="gold">Roll</button>
+    <button id="button" class="gold">Roll</button>
     <div id=results></div>
-    <p id="copywrite">&copy;2017 Spencer Ailts </p>
+    <p id="copywrite">&copy;2017 - Spencer Ailts </p>
   </footer>
+  <audio id="sound01" src="sounds/dice-roll01.mp3" preload="auto"></audio>
+  <script src="js/dice.js"></script>
 </body>
 
 
