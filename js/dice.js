@@ -38,7 +38,7 @@ die.addEventListener("click", (e) => {
       // -> re-adding the animation class
       dice.classList.add("shake");
       // -> dice result
-      let result = d20.roll();
+      var result = d20.roll();
       printNumber(result);
       // -> play sound
       play();
@@ -53,7 +53,7 @@ rollButton.addEventListener("click", (e) => {
       // -> re-adding the animation class
       dice.classList.add("shake");
       // -> dice result
-      let result = d20.roll();
+      var result = d20.roll();
       printNumber(result);
       // -> play sound
       play();
